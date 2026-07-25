@@ -1,7 +1,7 @@
 import app from "./src/app.js";
 import dotenv from "dotenv";
 import connectDB from "./src/DB/connectDB.js";
-dotenv.config();
+dotenv.config({ path: "./Backend/.env" });
 connectDB()
   .then(() => {
     console.log("Database Connection Sucessfull");
